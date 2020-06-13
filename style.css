@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    /* font-family: sans-serif; */
+    /* scroll-behavior: smooth; */
+}
+
+a {
+    text-decoration: none;
+}
+
+/* nav ==================================== */
+
+/*
+ nav {
+    width: 100%;
+    display: flex;
+    padding: 1rem;
+    position: fixed;
+    justify-content: space-around;
+    top: 0;
+    left: 0;
+}
+nav ul {
+    width: 80rem;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+nav ul a {
+    font-weight: bold;
+    padding: 1rem;
+    color: #fff;
+    text-decoration: none;
+}
+#nav-icon {
+    align-self: start;
+    font-weight: bold;
+    color: #fff;
+} */
+
+.nav1 {
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: 'Playfair Display SC', serif;
+    font-size: 20pt;
+}
+
+.nav1 ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    width: 100%;
+    list-style: none;
+}
+
+.nav-item {
+    width: 33.33%;
+    /* height: 10rem; */
+    padding: 1rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.word a:hover {
+    color: rgba(52, 6, 6, 1);
+    /* background: rgb(52,6,6);
+    background: radial-gradient(circle, rgba(52,6,6,1) 0%, rgba(19,1,1,1) 81%); */
+}
+
+#nav-about {
+    background-color: rgba(51, 88, 53, 0.5);
+    color: white;
+}
+
+#nav-menu {
+    background-color: rgba(197, 191, 191, 0.349);
+    color: black;
+}
+
+#nav-contact {
+    background-color: rgb(66, 4, 4, 0.5);
+    color: white;
+}
+
+/* .sepia {
+    -webkit-filter: sepia(1);
+    filter: sepia(1);
+} */
+
+/* main ==================================== */
+
+/* welcome */
+
+#welcome {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./img/rome1.jpg);
+}
+
+h1 {
+    color: #fff;
+    font-size: 3.5rem;
+    padding: 0.5rem;
+    text-align: center;
+    font-family: 'Playfair Display SC', serif;
+    font-size: 88px;
+    font-weight: lighter;
+}
+
+#welcome p {
+    font-size: 2.5rem;
+    font-style: italic;
+    color: #f5f5f5;
+    text-align: center;
+    font-family: Pinyon Script;
+    font-size: 40px;
+}
+
+/* p:before {
+    content: attr(data-text);
+    position: absolute;
+    top: 359.5px;
+    left: 0;
+    color: #470202;
+    width: 0%;
+    overflow: hidden;
+    transition: 1s;
+    background-image: url(./img/rome1.jpg);
+}
+p:hover:before {
+    width: 100%;
+} */
+
+/* menu */
+
+#menu {
+    width: 100vw;
+    padding: 3rem;
+    font-family: 'Playfair Display SC', serif;
+    background: rgb(23, 4, 7);
+    background: radial-gradient(circle, rgba(23, 4, 7, 1) 0%, rgba(0, 0, 0, 1) 81%);
+    color: #fff;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu h2 {
+    padding: 5rem 1rem;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.card-container {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: 25px;
+}
+
+.card {
+    margin: 1rem;
+    width: 30rem;
+    text-align: center;
+}
+
+.img-box {
+    width: 100%;
+    /* height: 20rem; */
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 30rem;
+    /* height: 100%; */
+    object-fit: cover;
+}
+
+.card img:hover {
+    transform: scale(1.2);
+}
+
+.project-title {
+    margin: 0 auto;
+    padding-top: 0rem;
+    padding: 1rem;
+    /* background-color: #292A2C; */
+    /* background-image: url(./img/Deep.jpg); */
+    background: rgb(52, 6, 6);
+    background: radial-gradient(circle, rgba(52, 6, 6, 1) 0%, rgba(19, 1, 1, 1) 81%);
+}
+
+.code {
+    color: #292A2C;
+}
+
+/* .code:hover {
+    color: #be3144;
+} */
+
+.btn-show-all {
+    width: 10rem;
+    margin: 3rem 1rem;
+    padding: 0.5rem 1rem;
+    display: block;
+    font-size: 25px;
+    background-color: #340606;
+    color: #fff;
+    transition: background 0.3s ease-out;
+    text-align: center;
+}
+
+.btn-show-all:hover {
+    /* background-color: #be3144; */
+    background: rgb(52, 6, 6);
+    background: radial-gradient(circle, rgba(52, 6, 6, 1) 0%, rgba(19, 1, 1, 1) 81%);
+}
+
+/* contact */
+
+#contact {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: #fff;
+}
+
+#contact h2 {
+    padding-bottom: 6rem;
+    font-size: 3.5rem;
+    text-align: center;
+    font-weight: lighter;
+}
+
+#contact p {
+    font-size: 1.3rem;
+    font-style: italic;
+}
+
+.contact-icon {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contact-icon a:hover {
+    transform: translateY(6px);
+}
+
+#contact a {
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+#contact-icon a:hover {
+    margin-bottom: 1rem;
+}
+
+/* footer */
+
+footer {
+    padding: 3rem;
+    display: flex;
+    justify-content: space-around;
+    border-top: 5px solid #470202;
+    background-color: black;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+footer a {
+    color: #fff;
+}
